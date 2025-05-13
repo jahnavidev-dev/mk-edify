@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './FrontPage.css'; // Optional for styling
+import './FrontPage.css';
 
 const FrontPage = () => {
   return (
     <div className="frontpage-container">
-      <h1 className="title">Welcome to MK Tech</h1>
-      <Link to="/admin" className="admin-link">Admin Portal</Link>
+      <h1 className="title">Welcome to MK Ed-Tech</h1>
+      <p className="rainbow-text">Learn • Do • Grow</p>
+      <Link to="/admin" className="admin-link">Enroll Now</Link>
     </div>
   );
 };

@@ -1,14 +1,39 @@
 .admin-portal-container {
+  min-height: 100vh;
   padding: 40px 20px;
-  text-align: center;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-image: url('/public/images/admin-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+}
+
+.home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home-button:hover {
+  background-color: rgba(0, 86, 179, 0.8);
 }
 
 .admin-title {
+  text-align: center;
   font-size: 2.5rem;
+  margin-top: 20px;
   margin-bottom: 40px;
-  color: #333;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
 
 .course-grid {
@@ -22,10 +47,10 @@
   display: flex;
   width: 400px;
   height: 100px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   align-items: center;
   transition: transform 0.2s ease;
 }
@@ -35,13 +60,13 @@
 }
 
 .course-image {
-  width: 100px; /* 25% of 400px */
-  height: 100px; /* keep it square */
+  width: 100px;
+  height: 100px;
   object-fit: cover;
 }
 
 .course-title {
-  flex: 1; /* takes up remaining 75% */
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;

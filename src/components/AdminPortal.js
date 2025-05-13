@@ -1,5 +1,6 @@
 // src/components/AdminPortal.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './AdminPortal.css';
 
 const courses = [
@@ -14,7 +15,10 @@ const courses = [
 
 const AdminPortal = () => (
   <div className="admin-portal-container">
+    <Link to="/" className="home-button">HOME</Link>
+
     <h1 className="admin-title">Admin Portal</h1>
+
     <div className="course-grid">
       {courses.map((course, index) => (
         <div className="course-card" key={index}>
