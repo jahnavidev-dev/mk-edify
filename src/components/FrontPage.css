@@ -1,0 +1,24 @@
+.frontpage-container {
+  text-align: center;
+  margin-top: 20%;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.admin-link {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.admin-link:hover {
+  background-color: #0056b3;
+}
