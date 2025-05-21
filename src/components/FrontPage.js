@@ -53,7 +53,7 @@ const FrontPage = () => {
 
       <div className="login-right">
         <img src="/images/login-banner.png" alt="Login Banner" />
-        <div className="overlay-text">UNLOCK YOUR POTENTIAL,<br />ONE LESSON AT A TIME.</div>
+        <div className="overlay-text">Edify</div>
       </div>
     </div>
   );
