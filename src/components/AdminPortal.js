@@ -8,8 +8,10 @@ const courses = [
   { title: 'Azure', image: '/images/azure.jpg' },
   { title: 'DevOps', image: '/images/devops.jpg' },
   { title: 'AI', image: '/images/ai.jpg' },
-  { title: 'Java', image: '/images/java.jpg' },
+  { title: 'ML Ops', image: '/images/mlops.jpg' },
   { title: 'Python', image: '/images/python.jpg' },
+  { title: 'Data Engg', image: '/images/dataengg.png' },
+  { title: 'Java', image: '/images/java.jpg' },
   { title: 'ReactJS', image: '/images/reactjs.jpg' }
 ];
 
@@ -17,7 +19,7 @@ const AdminPortal = () => (
   <div className="admin-portal-container">
     <Link to="/" className="home-button">HOME</Link>
 
-    <h1 className="admin-title">Admin Portal</h1>
+    <h1 className="admin-title">Edify Courses</h1>
 
     <div className="course-grid">
       {courses.map((course, index) => (
