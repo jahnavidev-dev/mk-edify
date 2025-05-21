@@ -1,58 +1,106 @@
-.frontpage-container {
+.login-page {
+  display: flex;
   height: 100vh;
-  text-align: center;
   font-family: Arial, sans-serif;
+}
+
+.login-left {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('/public/images/background.jpg'); /* Assuming you already have this */
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  background-color: #fff;
 }
 
-.title {
-  font-size: 5.5rem;
-  margin-bottom: 10px;
-  color: rgb(38, 0, 255); /* Neon Blue */
-  text-shadow:
-    0 0 5px #0ff,
-    0 0 10px #0ff,
-    0 0 20px #0ff,
-    0 0 40px #0ff;
-}
-
-.rainbow-text {
-  font-size: 4.8rem;
-  font-weight: bold;
-  background: linear-gradient(
-    90deg,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  );
+.brand-name {
+  font-size: 3rem;
+  background: linear-gradient(to right, #007bff, #e91e63);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.admin-link {
-  text-decoration: none;
-  padding: 10px 20px;
+.login-form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin: 10px 0 5px;
   font-weight: bold;
-  background-color: #007bff;
-  color: rgb(255, 255, 255);
-  font-size: 2.1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
 }
 
-.admin-link:hover {
-  background-color: #0df809;
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.remember-me {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.login-form button {
+  background: linear-gradient(to right, #007bff, #e91e63);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.login-form button:hover {
+  opacity: 0.9;
+}
+
+.signup-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.signup-link span {
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-right {
+  flex: 1;
+  background: linear-gradient(to right, #a0c5ff, #e4a0f7);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-right img {
+  width: 85%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: right;
+  line-height: 1.4;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
 }
