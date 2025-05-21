@@ -1,7 +1,7 @@
 .login-page {
   display: flex;
   height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .login-left {
@@ -10,8 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
   background-color: #fff;
+  padding: 40px;
 }
 
 .brand-name {
@@ -22,60 +22,65 @@
   margin-bottom: 30px;
 }
 
-.login-form {
+.login-card {
   width: 100%;
-  max-width: 350px;
+  max-width: 370px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
   display: flex;
   flex-direction: column;
 }
 
 .login-form label {
-  margin: 10px 0 5px;
-  font-weight: bold;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
-.login-form input[type="email"],
-.login-form input[type="password"] {
-  padding: 10px;
+.login-form input {
+  padding: 10px 12px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border 0.3s;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
 }
 
 .remember-me {
-  margin: 15px 0;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
+  font-size: 0.85rem;
 }
 
 .remember-me input {
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .login-form button {
   background: linear-gradient(to right, #007bff, #e91e63);
   color: white;
-  padding: 10px;
+  padding: 12px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 10px;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .login-form button:hover {
-  opacity: 0.9;
-}
-
-.signup-link {
-  margin-top: 15px;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.signup-link span {
-  color: #007bff;
-  font-weight: bold;
-  cursor: pointer;
+  opacity: 0.92;
 }
 
 .login-right {

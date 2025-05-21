@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import './FrontPage.css';
 
 const FrontPage = () => {
-  const [email, setEmail] = useState('admin@gmail.com');
-  const [password, setPassword] = useState('admin123');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (email === 'admin@gmail.com' && password === 'admin123') {
+    if (username === 'admin' && password === 'admin') {
       navigate('/admin');
     } else {
       alert('Invalid credentials');
@@ -21,33 +21,34 @@ const FrontPage = () => {
     <div className="login-page">
       <div className="login-left">
         <h1 className="brand-name">Edify</h1>
-        <form className="login-form" onSubmit={handleLogin}>
-          <label>Email</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+        <div className="login-card">
+          <form className="login-form" onSubmit={handleLogin}>
+            <label>Username</label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Enter your username"
+              required
+            />
 
-          <label>Password</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+            <label>Password</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter your password"
+              required
+            />
 
-          <div className="remember-me">
-            <input type="checkbox" id="remember" />
-            <label htmlFor="remember">Remember Me</label>
-          </div>
+            <div className="remember-me">
+              <input type="checkbox" id="remember" />
+              <label htmlFor="remember">Remember Me</label>
+            </div>
 
-          <button type="submit">Login</button>
-          <p className="signup-link">
-            Don't have an account? <span>Sign Up</span>
-          </p>
-        </form>
+            <button type="submit">Login</button>
+          </form>
+        </div>
       </div>
 
       <div className="login-right">
