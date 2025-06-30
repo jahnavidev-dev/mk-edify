@@ -14,7 +14,7 @@ jobs:
       - name: calling composite action
         uses: ./.github/actions/build
         with:
-          node-version: ${{ inputs.version }}
+          node-version: " ${{ inputs.version }} "
       - name: list files
         run: |
           ls -a
