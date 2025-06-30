@@ -1,15 +1,15 @@
 name: build
-inputs:
-  ver:
-    required: true
-    type: string
+# inputs:
+#   ver:
+#     required: true
+#     type: string
 runs:
   using: composite
   steps:
     - name: Setup Node.js environment
       uses: actions/setup-node@v3.9.1
       with:
-        node-version: ${{ inputs.ver }}
+        node-version: ${{ inputs.version }}
 
     - name: install node modules
       run: npm install
