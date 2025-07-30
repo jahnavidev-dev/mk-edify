@@ -20,7 +20,9 @@ jobs:
       - name: calling composite action
         uses: ./.github/actions/build
         with:
-          node-version: " ${{ inputs.version }} "
+          node-version: "${{ inputs.version }}"
+      - name: List build output
+        run: ls -R ./build 
       - name: Upload a Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
