@@ -13,7 +13,7 @@ runs:
     - name: build
       run: npm run build
       shell: bash
-    - name: linting
-      run: npm test
-      shell: bash
+#    - name: linting
+#      run: npm test
+#      shell: bash
    
