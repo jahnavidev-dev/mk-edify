@@ -32,7 +32,7 @@ const FrontPage = () => {
               required
             />
 
-            <label>Password</label>
+            <label>Passwords</label>
             <input
               type="password"
               value={password}
